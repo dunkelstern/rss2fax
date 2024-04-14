@@ -1,0 +1,11 @@
+<section class="site">
+    <time datetime="{{ site.date.strftime('%Y-%m-%d') }}">{{ site.date.strftime('%Y-%m-%d') }}</time>
+    <h2>{{ site.title }}</h2>
+    {% if site.articles %}
+        {% for article in site.articles %}
+            {% include "article.html" %}
+        {% endfor %}
+    {% else %}
+        <p>No articles</p>
+    {% endif %}
+</section>

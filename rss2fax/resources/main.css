@@ -1,0 +1,39 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 11pt;
+}
+
+h2 {
+    max-width: 80%;
+}
+
+h3 {
+    max-width: 80%;
+}
+
+section.site {
+    margin-bottom: 50pt;
+    border-top: 1pt solid black;
+    border-bottom: 1pt solid black;
+}
+
+section.site time {
+    display: block;
+    text-align: right;
+    width: 100%;
+    margin-top: 5pt;
+    margin-bottom: -20pt;
+}
+
+article {
+    margin-bottom: 10pt;
+    margin-top: 5pt;
+}
+
+article time {
+    margin-top: 10pt;
+    display: block;
+    text-align: right;
+    width: 100%;
+    margin-bottom: -10pt;
+}

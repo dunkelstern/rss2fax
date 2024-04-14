@@ -1,0 +1,7 @@
+<article>
+    <time datetime="{{ article.date.strftime('%Y-%m-%d') }}">{{ article.date.strftime('%Y-%m-%d') }}</time>
+    <h3>{{ article.title }}</h3>
+    <div class="content">
+        {{ article.summary | safe }}
+    </div>
+</article>
