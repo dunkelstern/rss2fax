@@ -23,7 +23,9 @@ def render_feeds(config: dict[str, any], feeds:list[dict[str, any]]):
     options = Options()
     options.headless = True
 
-    driver = webdriver.Chrome(options=options) 
+    driver = webdriver.Chrome(options=options)
+    driver.set_page_load_timeout(120)
+    driver.implicitly_wait(20)
     driver.get(f'file://{path.absolute()}')
 
     print_options = PrintOptions()
